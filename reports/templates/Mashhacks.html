@@ -1,0 +1,6762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The report style uses Bootstrap (http://getbootstrap.com) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<title>Report</title>
+</head>
+<body>
+	<div class="container" style="visibility: hidden">
+		<ul class="nav navbar-nav">
+			<li><a href="#general">General</a></li>
+			<li><a href="#user-stories">User Stories</a></li>
+			<li><a href="#ontology">Ontology</a></li>
+		</ul>
+	</div>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#general">General</a></li>
+				<li><a href="#user-stories">User Stories</a></li>
+				<li><a href="#ontology">Ontology</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">	
+	<h1 class="page-header">Report: System</h1>
+	<h2 id="general">General</h2>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Input file</h3>
+		</div>
+		<div class="panel-body">
+			<dl class="dl-horizontal">
+				<dt>Name</dt><dd>user_stories\Mashhacks.txt</dd>
+				<dt>Encoding</dt><dd>cp1252</dd>
+				<dt>Non-empty lines</dt><dd>50</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Run details</h3>
+			</div>
+			<div class="panel-body">
+			<h4>Parsed User Stories</h4>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" style="width: 94.0%">
+					Success: 47 User Stories (94.0%)
+				</div>
+				<div class="progress-bar progress-bar-danger" style="width: 6.0%">
+					Failed: 3 User Stories (6.0%)
+				</div>
+			</div>	
+					<p><span class="label label-danger">FAILED: Could not find a means indicator</span> User Story 5: <kbd>As a user, I want potential causes of turbulence. (weather, unstable air)
+</kbd></p>
+					<p><span class="label label-danger">FAILED: Could not find a means indicator</span> User Story 43: <kbd>As a user I want a brief summary of how turbulence is measured
+</kbd></p>
+					<p><span class="label label-danger">FAILED: Could not find a role indicator</span> User Story 50: <kbd>Other airplane hacks and travel tips.</kbd></p>
+			<div class="alert alert-warning">These User Stories are not included in any further statistics or ontology generation</div>
+			<h4>Time elapsed</h4>
+		</div>
+		<table class="table">
+			<thead>
+
+				<tr><th>Part</th><th>Time (s)</th></tr>
+			</thead>
+			<tbody>
+					<tr><td>Initializing Natural Language Processor (<em>spaCy</em> v0.101.0)</td><td>54.72789</td></tr>
+					<tr><td>Mining User Stories</td><td>3.38895</td></tr>
+					<tr><td>Creating Factor Matrix</td><td>9.35871</td></tr>
+					<tr><td>Generating Manchester Ontology</td><td>1.29199</td></tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Output files</h3>
+		</div>
+		<table class="table">
+			<thead>
+				<tr><th>File</th><th>Location</th></tr>
+			</thead>
+			<tbody>
+				<tr><td>Manchester Ontology</td><td><a href="C:\Users\c\Desktop\VisualNarrator-master-newoutput/System/ontology/System9.omn">output/System/ontology/System9.omn</a></td></tr>
+			</tbody>
+		</table>
+	</div>
+
+	<h2 id="user-stories">User Stories</h2>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 1</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, when I hear a strange noise, I want to be able to look up what it might be, and get information.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>when</td>
+						<td>I</td>
+						<td>hear</td>
+						<td>a</td>
+						<td>strange</td>
+						<td>noise</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>be</td>
+						<td>able</td>
+						<td>to</td>
+						<td>look</td>
+						<td>up</td>
+						<td>what</td>
+						<td>it</td>
+						<td>might</td>
+						<td>be</td>
+						<td>and</td>
+						<td>get</td>
+						<td>information</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>ADV</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>DET</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADJ</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>CONJ</td>
+						<td>VERB</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>WRB</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>DT</td>
+						<td>JJ</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>JJ</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>RP</td>
+						<td>WP</td>
+						<td>PRP</td>
+						<td>MD</td>
+						<td>VB</td>
+						<td>CC</td>
+						<td>VB</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to be able to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user when I hear a strange noise</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can look up what it might be and get information</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>look</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>information</kbd>
+					with phrase <kbd>information</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can up what it might be and get</kbd></dd>
+						<dd>with nouns 
+<kbd>what</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 2</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, when the plane drops in altitude, I want to know what happened, what the pilot is trying to do, and obtain general information on it.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>when</td>
+						<td>the</td>
+						<td>plane</td>
+						<td>drops</td>
+						<td>in</td>
+						<td>altitude</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>what</td>
+						<td>happened</td>
+						<td>what</td>
+						<td>the</td>
+						<td>pilot</td>
+						<td>is</td>
+						<td>trying</td>
+						<td>to</td>
+						<td>do</td>
+						<td>and</td>
+						<td>obtain</td>
+						<td>general</td>
+						<td>information</td>
+						<td>on</td>
+						<td>it</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>ADV</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>NOUN</td>
+						<td>VERB</td>
+						<td>NOUN</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>CONJ</td>
+						<td>VERB</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>PRON</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>WRB</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>VBZ</td>
+						<td>IN</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>WP</td>
+						<td>VBD</td>
+						<td>WP</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>VBZ</td>
+						<td>VBG</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>CC</td>
+						<td>VB</td>
+						<td>JJ</td>
+						<td>NN</td>
+						<td>IN</td>
+						<td>PRP</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user when the plane drops in altitude</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know what happened what the pilot is trying to do and obtain general information on it</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>what</kbd>
+					with phrase <kbd>what</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can what happened the pilot is trying to do and obtain general information on it</kbd></dd>
+						<dd>with nouns 
+<kbd>what</kbd><kbd>pilot</kbd><kbd>information</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 3</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to be able to know for sure when the plane is turning and why.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>be</td>
+						<td>able</td>
+						<td>to</td>
+						<td>know</td>
+						<td>for</td>
+						<td>sure</td>
+						<td>when</td>
+						<td>the</td>
+						<td>plane</td>
+						<td>is</td>
+						<td>turning</td>
+						<td>and</td>
+						<td>why</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADJ</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>ADJ</td>
+						<td>ADV</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>CONJ</td>
+						<td>ADV</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>JJ</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>IN</td>
+						<td>JJ</td>
+						<td>WRB</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>VBZ</td>
+						<td>VBG</td>
+						<td>CC</td>
+						<td>WRB</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to be able to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know for sure when the plane is turning and why</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						There does not seem to be a main object, so it was replaced with the system name <kbd>System</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can for sure when the plane is turning and why</kbd></dd>
+						<dd>with nouns 
+<kbd>plane</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 4</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know flight weather conditions for my journey.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>flight</td>
+						<td>weather</td>
+						<td>conditions</td>
+						<td>for</td>
+						<td>my</td>
+						<td>journey</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>NOUN</td>
+						<td>NOUN</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>NN</td>
+						<td>NN</td>
+						<td>NNS</td>
+						<td>IN</td>
+						<td>PRP$</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know flight weather conditions for my journey</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+					<kbd>weather conditions</kbd> (compound)
+					with phrase <kbd>flight weather conditions</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can for my journey</kbd></dd>
+						<dd>with nouns 
+<kbd>journey</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 6</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know when we are about to land, and obtain expectations in terms of altitude and related noises.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>when</td>
+						<td>we</td>
+						<td>are</td>
+						<td>about</td>
+						<td>to</td>
+						<td>land</td>
+						<td>and</td>
+						<td>obtain</td>
+						<td>expectations</td>
+						<td>in</td>
+						<td>terms</td>
+						<td>of</td>
+						<td>altitude</td>
+						<td>and</td>
+						<td>related</td>
+						<td>noises</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADV</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>PART</td>
+						<td>NOUN</td>
+						<td>CONJ</td>
+						<td>VERB</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>NOUN</td>
+						<td>CONJ</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>WRB</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>IN</td>
+						<td>TO</td>
+						<td>NN</td>
+						<td>CC</td>
+						<td>VB</td>
+						<td>NNS</td>
+						<td>IN</td>
+						<td>NNS</td>
+						<td>IN</td>
+						<td>NN</td>
+						<td>CC</td>
+						<td>JJ</td>
+						<td>NNS</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know when we are about to land and obtain expectations in terms of altitude and related noises</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>expectations</kbd>
+					with phrase <kbd>expectations</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can when we are about to land and obtain in terms of altitude and related noises</kbd></dd>
+						<dd>with nouns 
+<kbd>land</kbd><kbd>terms</kbd><kbd>altitude</kbd><kbd>noises</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 7</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to look at my pilot's turbulence record prior to and during a flight.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>look</td>
+						<td>at</td>
+						<td>my</td>
+						<td>pilot</td>
+						<td>'s</td>
+						<td>turbulence</td>
+						<td>record</td>
+						<td>prior</td>
+						<td>to</td>
+						<td>and</td>
+						<td>during</td>
+						<td>a</td>
+						<td>flight</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>PART</td>
+						<td>NOUN</td>
+						<td>NOUN</td>
+						<td>ADV</td>
+						<td>ADP</td>
+						<td>CONJ</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>IN</td>
+						<td>PRP$</td>
+						<td>NN</td>
+						<td>POS</td>
+						<td>NN</td>
+						<td>NN</td>
+						<td>RB</td>
+						<td>IN</td>
+						<td>CC</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can look at my pilot's turbulence record prior to and during a flight</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>look at during</kbd> (type III phrasal verb)
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+					<kbd>turbulence record</kbd> (compound)
+					with phrase <kbd>my pilot's turbulence record</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can prior to and a flight</kbd></dd>
+						<dd>with nouns 
+<kbd>flight</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 8</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to look at my flight's turbulence record prior to and during a flight.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>look</td>
+						<td>at</td>
+						<td>my</td>
+						<td>flight</td>
+						<td>'s</td>
+						<td>turbulence</td>
+						<td>record</td>
+						<td>prior</td>
+						<td>to</td>
+						<td>and</td>
+						<td>during</td>
+						<td>a</td>
+						<td>flight</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>PART</td>
+						<td>NOUN</td>
+						<td>NOUN</td>
+						<td>ADV</td>
+						<td>ADP</td>
+						<td>CONJ</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>IN</td>
+						<td>PRP$</td>
+						<td>NN</td>
+						<td>POS</td>
+						<td>NN</td>
+						<td>NN</td>
+						<td>RB</td>
+						<td>IN</td>
+						<td>CC</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can look at my flight's turbulence record prior to and during a flight</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>look at during</kbd> (type III phrasal verb)
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+					<kbd>turbulence record</kbd> (compound)
+					with phrase <kbd>my flight's turbulence record</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can prior to and a flight</kbd></dd>
+						<dd>with nouns 
+<kbd>flight</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 9</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know how to fix pressure in my ears when flying.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>how</td>
+						<td>to</td>
+						<td>fix</td>
+						<td>pressure</td>
+						<td>in</td>
+						<td>my</td>
+						<td>ears</td>
+						<td>when</td>
+						<td>flying</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADV</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>ADV</td>
+						<td>VERB</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>WRB</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>NN</td>
+						<td>IN</td>
+						<td>PRP$</td>
+						<td>NNS</td>
+						<td>WRB</td>
+						<td>VBG</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know how to fix pressure in my ears when flying</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>pressure</kbd>
+					with phrase <kbd>pressure</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can how to fix in my ears when flying</kbd></dd>
+						<dd>with nouns 
+<kbd>ears</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 10</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know how long I have been in the air.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>how</td>
+						<td>long</td>
+						<td>I</td>
+						<td>have</td>
+						<td>been</td>
+						<td>in</td>
+						<td>the</td>
+						<td>air</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADV</td>
+						<td>ADV</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>WRB</td>
+						<td>RB</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>VBN</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know how long I have been in the air</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>air</kbd>
+					with phrase <kbd>the air</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can how long I have been in</kbd></dd>
+						<dd>with nouns 
+</dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 11</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know how much longer I will be in the air.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>how</td>
+						<td>much</td>
+						<td>longer</td>
+						<td>I</td>
+						<td>will</td>
+						<td>be</td>
+						<td>in</td>
+						<td>the</td>
+						<td>air</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADV</td>
+						<td>ADV</td>
+						<td>ADV</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>WRB</td>
+						<td>RB</td>
+						<td>RBR</td>
+						<td>PRP</td>
+						<td>MD</td>
+						<td>VB</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know how much longer I will be in the air</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>air</kbd>
+					with phrase <kbd>the air</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can how much longer I will be in</kbd></dd>
+						<dd>with nouns 
+</dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 12</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know where in the world I am at the moment.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>where</td>
+						<td>in</td>
+						<td>the</td>
+						<td>world</td>
+						<td>I</td>
+						<td>am</td>
+						<td>at</td>
+						<td>the</td>
+						<td>moment</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADV</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>WRB</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know where in the world I am at the moment</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>world</kbd>
+					with phrase <kbd>the world</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can where in I am at the moment</kbd></dd>
+						<dd>with nouns 
+<kbd>moment</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 13</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to be alerted to upcoming potential turbulence before it occurs (can be crowdsourced based on previous data)
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>be</td>
+						<td>alerted</td>
+						<td>to</td>
+						<td>upcoming</td>
+						<td>potential</td>
+						<td>turbulence</td>
+						<td>before</td>
+						<td>it</td>
+						<td>occurs</td>
+						<td>(</td>
+						<td>can</td>
+						<td>be</td>
+						<td>crowdsourced</td>
+						<td>based</td>
+						<td>on</td>
+						<td>previous</td>
+						<td>data</td>
+						<td>)</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>VERB</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PUNCT</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>PUNCT</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>VBN</td>
+						<td>IN</td>
+						<td>VBG</td>
+						<td>JJ</td>
+						<td>NN</td>
+						<td>IN</td>
+						<td>PRP</td>
+						<td>VBZ</td>
+						<td>-LRB-</td>
+						<td>MD</td>
+						<td>VB</td>
+						<td>VBN</td>
+						<td>VBN</td>
+						<td>IN</td>
+						<td>JJ</td>
+						<td>NNS</td>
+						<td>-RRB-</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can be alerted to upcoming potential turbulence before it occurs (can be crowdsourced based on previous data)</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>alerted</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>turbulence</kbd>
+					with phrase <kbd>potential turbulence</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can be to upcoming before it occurs ( can be crowdsourced based on previous data )</kbd></dd>
+						<dd>with nouns 
+<kbd>data</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 14</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to see the current amount of turbulence.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>see</td>
+						<td>the</td>
+						<td>current</td>
+						<td>amount</td>
+						<td>of</td>
+						<td>turbulence</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>DET</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>DT</td>
+						<td>JJ</td>
+						<td>NN</td>
+						<td>IN</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can see the current amount of turbulence</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>see</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>amount</kbd>
+					with phrase <kbd>the current amount</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can of turbulence</kbd></dd>
+						<dd>with nouns 
+<kbd>turbulence</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 15</span>
+					<div style="display: inline-block; margin: 0 1em">As an airline, I want to gather turbulence data from actual customers/passengers.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>an</td>
+						<td>airline</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>gather</td>
+						<td>turbulence</td>
+						<td>data</td>
+						<td>from</td>
+						<td>actual</td>
+						<td>customers/passengers</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>NOUN</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>NN</td>
+						<td>NNS</td>
+						<td>IN</td>
+						<td>JJ</td>
+						<td>NNS</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As an</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>airline</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can gather turbulence data from actual customers/passengers</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">airline</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>gather</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+					<kbd>turbulence data</kbd> (compound)
+					with phrase <kbd>turbulence data</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can from actual customers/passengers</kbd></dd>
+						<dd>with nouns 
+<kbd>customers/passengers</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 16</span>
+					<div style="display: inline-block; margin: 0 1em">As an airline, I want to compare my flight record with other airlines on the same route.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>an</td>
+						<td>airline</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>compare</td>
+						<td>my</td>
+						<td>flight</td>
+						<td>record</td>
+						<td>with</td>
+						<td>other</td>
+						<td>airlines</td>
+						<td>on</td>
+						<td>the</td>
+						<td>same</td>
+						<td>route</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>PRP$</td>
+						<td>NN</td>
+						<td>NN</td>
+						<td>IN</td>
+						<td>JJ</td>
+						<td>NNS</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>JJ</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As an</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>airline</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can compare my flight record with other airlines on the same route</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">airline</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>compare</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+					<kbd>flight record</kbd> (compound)
+					with phrase <kbd>my flight record</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can with other airlines on the same route</kbd></dd>
+						<dd>with nouns 
+<kbd>airlines</kbd><kbd>route</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 17</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know flight weather conditions for my journey.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>flight</td>
+						<td>weather</td>
+						<td>conditions</td>
+						<td>for</td>
+						<td>my</td>
+						<td>journey</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>NOUN</td>
+						<td>NOUN</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>NN</td>
+						<td>NN</td>
+						<td>NNS</td>
+						<td>IN</td>
+						<td>PRP$</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know flight weather conditions for my journey</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+					<kbd>weather conditions</kbd> (compound)
+					with phrase <kbd>flight weather conditions</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can for my journey</kbd></dd>
+						<dd>with nouns 
+<kbd>journey</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 18</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to search by airline / flight number
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>search</td>
+						<td>by</td>
+						<td>airline</td>
+						<td>/</td>
+						<td>flight</td>
+						<td>number</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>NOUN</td>
+						<td>SYM</td>
+						<td>NOUN</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>IN</td>
+						<td>NN</td>
+						<td>SYM</td>
+						<td>NN</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can search by airline / flight number</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>search by</kbd> (type III phrasal verb)
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+					<kbd>flight number</kbd> (compound)
+					with phrase <kbd>/ flight number</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can airline</kbd></dd>
+						<dd>with nouns 
+<kbd>airline</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 19</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to look up flight names.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>look</td>
+						<td>up</td>
+						<td>flight</td>
+						<td>names</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>NOUN</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>RP</td>
+						<td>NN</td>
+						<td>NNS</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can look up flight names</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>look</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+					<kbd>flight names</kbd> (compound)
+					with phrase <kbd>flight names</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can up</kbd></dd>
+						<dd>with nouns 
+</dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 20</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to see my departure location and my arrival location.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>see</td>
+						<td>my</td>
+						<td>departure</td>
+						<td>location</td>
+						<td>and</td>
+						<td>my</td>
+						<td>arrival</td>
+						<td>location</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>NOUN</td>
+						<td>CONJ</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>PRP$</td>
+						<td>NN</td>
+						<td>NN</td>
+						<td>CC</td>
+						<td>PRP$</td>
+						<td>NN</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can see my departure location and my arrival location</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>see</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+					<kbd>departure location</kbd> (compound)
+					with phrase <kbd>my departure location</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can and my arrival location</kbd></dd>
+						<dd>with nouns 
+<kbd>arrival</kbd><kbd>location</kbd></dd>
+						<dd>of which compounds 
+<kbd>arrival</kbd><kbd>location</kbd></dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 21</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to see the temperatures of both locations.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>see</td>
+						<td>the</td>
+						<td>temperatures</td>
+						<td>of</td>
+						<td>both</td>
+						<td>locations</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>DT</td>
+						<td>NNS</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NNS</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can see the temperatures of both locations</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>see</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>temperatures</kbd>
+					with phrase <kbd>the temperatures</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can of both locations</kbd></dd>
+						<dd>with nouns 
+<kbd>locations</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 22</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know my ETA.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>my</td>
+						<td>ETA</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADJ</td>
+						<td>PROPN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>PRP$</td>
+						<td>NNP</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know my ETA</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>ETA</kbd>
+					with phrase <kbd>my ETA</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can</kbd></dd>
+						<dd>with nouns 
+</dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 23</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to find flights by airline (by current/upcoming flights)
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>find</td>
+						<td>flights</td>
+						<td>by</td>
+						<td>airline</td>
+						<td>(</td>
+						<td>by</td>
+						<td>current/upcoming</td>
+						<td>flights</td>
+						<td>)</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>NOUN</td>
+						<td>PUNCT</td>
+						<td>ADP</td>
+						<td>VERB</td>
+						<td>NOUN</td>
+						<td>PUNCT</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>NNS</td>
+						<td>IN</td>
+						<td>NN</td>
+						<td>-LRB-</td>
+						<td>IN</td>
+						<td>VBG</td>
+						<td>NNS</td>
+						<td>-RRB-</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can find flights by airline (by current/upcoming flights)</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>find</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>flights</kbd>
+					with phrase <kbd>flights</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can by airline ( by current/upcoming flights )</kbd></dd>
+						<dd>with nouns 
+<kbd>airline</kbd><kbd>flights</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 24</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know the terminal / gate.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>the</td>
+						<td>terminal</td>
+						<td>/</td>
+						<td>gate</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>SYM</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>SYM</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know the terminal / gate</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>gate</kbd>
+					with phrase <kbd>the terminal / gate</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can</kbd></dd>
+						<dd>with nouns 
+</dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 25</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to see the flight number.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>see</td>
+						<td>the</td>
+						<td>flight</td>
+						<td>number</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can see the flight number</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>see</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+					<kbd>flight number</kbd> (compound)
+					with phrase <kbd>the flight number</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can</kbd></dd>
+						<dd>with nouns 
+</dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 26</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to search by route.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>search</td>
+						<td>by</td>
+						<td>route</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>IN</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can search by route</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>search by</kbd> (type III phrasal verb)
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>route</kbd>
+					with phrase <kbd>route</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can</kbd></dd>
+						<dd>with nouns 
+</dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 27</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know the weather of both locations.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>the</td>
+						<td>weather</td>
+						<td>of</td>
+						<td>both</td>
+						<td>locations</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NNS</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know the weather of both locations</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>weather</kbd>
+					with phrase <kbd>the weather</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can of both locations</kbd></dd>
+						<dd>with nouns 
+<kbd>locations</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 28</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know the plane of both locations.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>the</td>
+						<td>plane</td>
+						<td>of</td>
+						<td>both</td>
+						<td>locations</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NNS</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know the plane of both locations</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>plane</kbd>
+					with phrase <kbd>the plane</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can of both locations</kbd></dd>
+						<dd>with nouns 
+<kbd>locations</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 29</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know the weather at any given airport.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>the</td>
+						<td>weather</td>
+						<td>at</td>
+						<td>any</td>
+						<td>given</td>
+						<td>airport</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>VERB</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>VBN</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know the weather at any given airport</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>weather</kbd>
+					with phrase <kbd>the weather</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can at any given airport</kbd></dd>
+						<dd>with nouns 
+<kbd>airport</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 30</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to look at my pilot's turbulence record prior to and during a flight.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>look</td>
+						<td>at</td>
+						<td>my</td>
+						<td>pilot</td>
+						<td>'s</td>
+						<td>turbulence</td>
+						<td>record</td>
+						<td>prior</td>
+						<td>to</td>
+						<td>and</td>
+						<td>during</td>
+						<td>a</td>
+						<td>flight</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>PART</td>
+						<td>NOUN</td>
+						<td>NOUN</td>
+						<td>ADV</td>
+						<td>ADP</td>
+						<td>CONJ</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>IN</td>
+						<td>PRP$</td>
+						<td>NN</td>
+						<td>POS</td>
+						<td>NN</td>
+						<td>NN</td>
+						<td>RB</td>
+						<td>IN</td>
+						<td>CC</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can look at my pilot's turbulence record prior to and during a flight</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>look at during</kbd> (type III phrasal verb)
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+					<kbd>turbulence record</kbd> (compound)
+					with phrase <kbd>my pilot's turbulence record</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can prior to and a flight</kbd></dd>
+						<dd>with nouns 
+<kbd>flight</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 31</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to look at my flight's turbulence record prior to and during a flight.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>look</td>
+						<td>at</td>
+						<td>my</td>
+						<td>flight</td>
+						<td>'s</td>
+						<td>turbulence</td>
+						<td>record</td>
+						<td>prior</td>
+						<td>to</td>
+						<td>and</td>
+						<td>during</td>
+						<td>a</td>
+						<td>flight</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>PART</td>
+						<td>NOUN</td>
+						<td>NOUN</td>
+						<td>ADV</td>
+						<td>ADP</td>
+						<td>CONJ</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>IN</td>
+						<td>PRP$</td>
+						<td>NN</td>
+						<td>POS</td>
+						<td>NN</td>
+						<td>NN</td>
+						<td>RB</td>
+						<td>IN</td>
+						<td>CC</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can look at my flight's turbulence record prior to and during a flight</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>look at during</kbd> (type III phrasal verb)
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+					<kbd>turbulence record</kbd> (compound)
+					with phrase <kbd>my flight's turbulence record</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can prior to and a flight</kbd></dd>
+						<dd>with nouns 
+<kbd>flight</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 32</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to see elapsed time.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>see</td>
+						<td>elapsed</td>
+						<td>time</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>JJ</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can see elapsed time</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>see</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>time</kbd>
+					with phrase <kbd>elapsed time</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can</kbd></dd>
+						<dd>with nouns 
+</dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 33</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, when I hear a strange noise, I want to be able to look up what it might be, and get information.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>when</td>
+						<td>I</td>
+						<td>hear</td>
+						<td>a</td>
+						<td>strange</td>
+						<td>noise</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>be</td>
+						<td>able</td>
+						<td>to</td>
+						<td>look</td>
+						<td>up</td>
+						<td>what</td>
+						<td>it</td>
+						<td>might</td>
+						<td>be</td>
+						<td>and</td>
+						<td>get</td>
+						<td>information</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>ADV</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>DET</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADJ</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>CONJ</td>
+						<td>VERB</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>WRB</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>DT</td>
+						<td>JJ</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>JJ</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>RP</td>
+						<td>WP</td>
+						<td>PRP</td>
+						<td>MD</td>
+						<td>VB</td>
+						<td>CC</td>
+						<td>VB</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to be able to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user when I hear a strange noise</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can look up what it might be and get information</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>look</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>information</kbd>
+					with phrase <kbd>information</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can up what it might be and get</kbd></dd>
+						<dd>with nouns 
+<kbd>what</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 34</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to look through a library of sounds.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>look</td>
+						<td>through</td>
+						<td>a</td>
+						<td>library</td>
+						<td>of</td>
+						<td>sounds</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>IN</td>
+						<td>NNS</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can look through a library of sounds</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>look through</kbd> (type III phrasal verb)
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>library</kbd>
+					with phrase <kbd>a library</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can of sounds</kbd></dd>
+						<dd>with nouns 
+<kbd>sounds</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 35</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to preview sounds.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>preview</td>
+						<td>sounds</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>NNS</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can preview sounds</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>preview</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>sounds</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can</kbd></dd>
+						<dd>with nouns 
+</dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 36</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to read about what the sound could be caused by.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>read</td>
+						<td>about</td>
+						<td>what</td>
+						<td>the</td>
+						<td>sound</td>
+						<td>could</td>
+						<td>be</td>
+						<td>caused</td>
+						<td>by</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>NOUN</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>ADP</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>IN</td>
+						<td>WP</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>MD</td>
+						<td>VB</td>
+						<td>VBN</td>
+						<td>IN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can read about what the sound could be caused by</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>read</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>what</kbd>
+					with phrase <kbd>what</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can about the sound could be caused by</kbd></dd>
+						<dd>with nouns 
+<kbd>sound</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 37</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, when the plane drops in altitude, I want to know what happened, what the pilot is trying to do, and obtain general information on it.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>when</td>
+						<td>the</td>
+						<td>plane</td>
+						<td>drops</td>
+						<td>in</td>
+						<td>altitude</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>what</td>
+						<td>happened</td>
+						<td>what</td>
+						<td>the</td>
+						<td>pilot</td>
+						<td>is</td>
+						<td>trying</td>
+						<td>to</td>
+						<td>do</td>
+						<td>and</td>
+						<td>obtain</td>
+						<td>general</td>
+						<td>information</td>
+						<td>on</td>
+						<td>it</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>ADV</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>NOUN</td>
+						<td>VERB</td>
+						<td>NOUN</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>CONJ</td>
+						<td>VERB</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>PRON</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>WRB</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>VBZ</td>
+						<td>IN</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>WP</td>
+						<td>VBD</td>
+						<td>WP</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>VBZ</td>
+						<td>VBG</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>CC</td>
+						<td>VB</td>
+						<td>JJ</td>
+						<td>NN</td>
+						<td>IN</td>
+						<td>PRP</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user when the plane drops in altitude</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know what happened what the pilot is trying to do and obtain general information on it</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>what</kbd>
+					with phrase <kbd>what</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can what happened the pilot is trying to do and obtain general information on it</kbd></dd>
+						<dd>with nouns 
+<kbd>what</kbd><kbd>pilot</kbd><kbd>information</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 38</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know potential causes of turbulence, and likely ones.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>potential</td>
+						<td>causes</td>
+						<td>of</td>
+						<td>turbulence</td>
+						<td>and</td>
+						<td>likely</td>
+						<td>ones</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>NOUN</td>
+						<td>CONJ</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>JJ</td>
+						<td>NNS</td>
+						<td>IN</td>
+						<td>NN</td>
+						<td>CC</td>
+						<td>JJ</td>
+						<td>NNS</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know potential causes of turbulence and likely ones</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>causes</kbd>
+					with phrase <kbd>potential causes</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can of turbulence and likely ones</kbd></dd>
+						<dd>with nouns 
+<kbd>turbulence</kbd><kbd>ones</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 39</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know when we are about to land.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>when</td>
+						<td>we</td>
+						<td>are</td>
+						<td>about</td>
+						<td>to</td>
+						<td>land</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADV</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>PART</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>WRB</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>IN</td>
+						<td>TO</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know when we are about to land</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						There does not seem to be a main object, so it was replaced with the system name <kbd>System</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can when we are about to land</kbd></dd>
+						<dd>with nouns 
+<kbd>land</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 40</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know about sounds and bumps related to landing.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>about</td>
+						<td>sounds</td>
+						<td>and</td>
+						<td>bumps</td>
+						<td>related</td>
+						<td>to</td>
+						<td>landing</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>NOUN</td>
+						<td>CONJ</td>
+						<td>NOUN</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>IN</td>
+						<td>NNS</td>
+						<td>CC</td>
+						<td>NNS</td>
+						<td>VBN</td>
+						<td>IN</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know about sounds and bumps related to landing</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know about</kbd> (type III phrasal verb)
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>sounds</kbd>
+					with phrase <kbd>sounds</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can and bumps related to landing</kbd></dd>
+						<dd>with nouns 
+<kbd>bumps</kbd><kbd>landing</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 41</span>
+					<div style="display: inline-block; margin: 0 1em">As a user I want to measure the current amount of turbulence
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>measure</td>
+						<td>the</td>
+						<td>current</td>
+						<td>amount</td>
+						<td>of</td>
+						<td>turbulence</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>DET</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>DT</td>
+						<td>JJ</td>
+						<td>NN</td>
+						<td>IN</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can measure the current amount of turbulence</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>measure</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>amount</kbd>
+					with phrase <kbd>the current amount</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can of turbulence</kbd></dd>
+						<dd>with nouns 
+<kbd>turbulence</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 42</span>
+					<div style="display: inline-block; margin: 0 1em">As a user I want to be alerted to potential turbulence 10 min before it occurs (can be crowdsourced based on previous data).
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>be</td>
+						<td>alerted</td>
+						<td>to</td>
+						<td>potential</td>
+						<td>turbulence</td>
+						<td>10</td>
+						<td>min</td>
+						<td>before</td>
+						<td>it</td>
+						<td>occurs</td>
+						<td>(</td>
+						<td>can</td>
+						<td>be</td>
+						<td>crowdsourced</td>
+						<td>based</td>
+						<td>on</td>
+						<td>previous</td>
+						<td>data</td>
+						<td>)</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>NUM</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PUNCT</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>PUNCT</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>VBN</td>
+						<td>IN</td>
+						<td>JJ</td>
+						<td>NN</td>
+						<td>CD</td>
+						<td>NN</td>
+						<td>IN</td>
+						<td>PRP</td>
+						<td>VBZ</td>
+						<td>-LRB-</td>
+						<td>MD</td>
+						<td>VB</td>
+						<td>VBN</td>
+						<td>VBN</td>
+						<td>IN</td>
+						<td>JJ</td>
+						<td>NNS</td>
+						<td>-RRB-</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can be alerted to potential turbulence 10 min before it occurs (can be crowdsourced based on previous data)</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>alerted to</kbd> (type III phrasal verb)
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>turbulence</kbd>
+					with phrase <kbd>potential turbulence</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can be 10 min before it occurs ( can be crowdsourced based on previous data )</kbd></dd>
+						<dd>with nouns 
+<kbd>min</kbd><kbd>data</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 44</span>
+					<div style="display: inline-block; margin: 0 1em">As a user I want to see a graph of the last 2 hours of turbulence
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>see</td>
+						<td>a</td>
+						<td>graph</td>
+						<td>of</td>
+						<td>the</td>
+						<td>last</td>
+						<td>2</td>
+						<td>hours</td>
+						<td>of</td>
+						<td>turbulence</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>ADJ</td>
+						<td>NUM</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>JJ</td>
+						<td>CD</td>
+						<td>NNS</td>
+						<td>IN</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can see a graph of the last 2 hours of turbulence</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>see</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>graph</kbd>
+					with phrase <kbd>a graph</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can of the last 2 hours of turbulence</kbd></dd>
+						<dd>with nouns 
+<kbd>hours</kbd><kbd>turbulence</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 45</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to be able to know when the plane is turning and why.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>be</td>
+						<td>able</td>
+						<td>to</td>
+						<td>know</td>
+						<td>when</td>
+						<td>the</td>
+						<td>plane</td>
+						<td>is</td>
+						<td>turning</td>
+						<td>and</td>
+						<td>why</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADJ</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADV</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>CONJ</td>
+						<td>ADV</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>JJ</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>WRB</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>VBZ</td>
+						<td>VBG</td>
+						<td>CC</td>
+						<td>WRB</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to be able to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know when the plane is turning and why</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						There does not seem to be a main object, so it was replaced with the system name <kbd>System</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can when the plane is turning and why</kbd></dd>
+						<dd>with nouns 
+<kbd>plane</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 46</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to see the direction of the plane's journey.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>see</td>
+						<td>the</td>
+						<td>direction</td>
+						<td>of</td>
+						<td>the</td>
+						<td>plane</td>
+						<td>'s</td>
+						<td>journey</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PART</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>POS</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can see the direction of the plane's journey</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>see</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>direction</kbd>
+					with phrase <kbd>the direction</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can of the plane 's journey</kbd></dd>
+						<dd>with nouns 
+<kbd>plane</kbd><kbd>journey</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 47</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to see an explanation of why the plane is in the direction it's going in.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>see</td>
+						<td>an</td>
+						<td>explanation</td>
+						<td>of</td>
+						<td>why</td>
+						<td>the</td>
+						<td>plane</td>
+						<td>is</td>
+						<td>in</td>
+						<td>the</td>
+						<td>direction</td>
+						<td>it</td>
+						<td>'s</td>
+						<td>going</td>
+						<td>in</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>ADV</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>VERB</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>VERB</td>
+						<td>PART</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>IN</td>
+						<td>WRB</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>VBZ</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBZ</td>
+						<td>VBG</td>
+						<td>RP</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can see an explanation of why the plane is in the direction it's going in</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>see</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>explanation</kbd>
+					with phrase <kbd>an explanation</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can of why the plane is in the direction it 's going in</kbd></dd>
+						<dd>with nouns 
+<kbd>plane</kbd><kbd>direction</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 48</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know where in the world I am the moment.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>where</td>
+						<td>in</td>
+						<td>the</td>
+						<td>world</td>
+						<td>I</td>
+						<td>am</td>
+						<td>the</td>
+						<td>moment</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADV</td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>DET</td>
+						<td>NOUN</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>WRB</td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>DT</td>
+						<td>NN</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know where in the world I am the moment</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>world</kbd>
+					with phrase <kbd>the world</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can where in I am the moment</kbd></dd>
+						<dd>with nouns 
+<kbd>moment</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default user-story">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<div class="row">
+					<span class="label label-success" style="display: inline-block; margin-left: 1em">User Story 49</span>
+					<div style="display: inline-block; margin: 0 1em">As a user, I want to know how to fix pressure in my ears when I'm flying.
+</div>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<h4>Part-of-speech tags</h4>
+				<table class="table">
+					<tr><td></td>
+						<td>As</td>
+						<td>a</td>
+						<td>user</td>
+						<td>I</td>
+						<td>want</td>
+						<td>to</td>
+						<td>know</td>
+						<td>how</td>
+						<td>to</td>
+						<td>fix</td>
+						<td>pressure</td>
+						<td>in</td>
+						<td>my</td>
+						<td>ears</td>
+						<td>when</td>
+						<td>I</td>
+						<td>'m</td>
+						<td>flying</td>
+					</tr>
+					<tr><td><strong>Universal</strong></td>
+						<td>ADP</td>
+						<td>DET</td>
+						<td>NOUN</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>ADV</td>
+						<td>PART</td>
+						<td>VERB</td>
+						<td>NOUN</td>
+						<td>ADP</td>
+						<td>ADJ</td>
+						<td>NOUN</td>
+						<td>ADV</td>
+						<td>PRON</td>
+						<td>VERB</td>
+						<td>VERB</td>
+					</tr>
+					<tr><td><strong>Penn Treebank</strong></td>
+						<td>IN</td>
+						<td>DT</td>
+						<td>NN</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>WRB</td>
+						<td>TO</td>
+						<td>VB</td>
+						<td>NN</td>
+						<td>IN</td>
+						<td>PRP$</td>
+						<td>NNS</td>
+						<td>WRB</td>
+						<td>PRP</td>
+						<td>VBP</td>
+						<td>VBG</td>
+					</tr>
+				</table>
+				<h4>Format</h4>
+				<dl>
+					<dt>Role indicator</dt>
+					<dd><kbd><span class="roleIndicator">As a</span></kbd></dd>
+					<dt>Means indicator</dt> 
+					<dd><kbd><span class="meansIndicator">I want to</span></kbd></dd>
+				</dl>
+				<h4>Simplified</h4>
+				<dl>
+					<dt>Role</dt>
+					<dd><kbd>user</kbd></dd>
+					<dt>Means</dt> 
+					<dd><kbd><span class="meansText">I can know how to fix pressure in my ears when I'm flying</span></kbd></dd>
+				<h4>Role</h4>
+				
+				<dl>				
+					<dt>Functional role<dt>
+					<dd>
+					<kbd><span class="roleText">user</span></kbd>
+					</dd>
+				</dl>
+				<h4>Means</h4>
+				<dl>
+					<dt>Main verb</dt>
+					<dd>
+					<kbd>know</kbd>
+					</dd>
+					<dt>Main object</dt> 
+					<dd>
+						<kbd>pressure</kbd>
+					with phrase <kbd>pressure</kbd>
+					</dd>
+					<dt>Free form</dt>
+					<dd><kbd>can how to fix in my ears when I 'm flying</kbd></dd>
+						<dd>with nouns 
+<kbd>ears</kbd></dd>
+						<dd>of which compounds 
+</dd>
+				</dl>
+			</div>
+		</div>
+
+	<h2 id="ontology">Manchester Ontology</h2>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Generation settings</h3>
+		</div>
+		<div class="panel-body">
+			<h4>Threshold</h4>
+			1.0
+			<div class="alert alert-warning">Every word below the threshold will not be used to make any ontology classes or relationships</div>
+			<h4>Absolute weights (base = 1)</h4>	
+			<dl class="dl-horizontal">
+				<dt>Functional role</dt><dd>1</dd>
+				<dt>Direct objects</dt><dd></dd>
+				<dt>Noun in free form means</dt><dd>0.7</dd>
+				<dt>Noun in free form ends</dt><dd>0.5</dd>
+			</dl>
+			<h4>Relative weights</h4>	
+			<dl class="dl-horizontal">
+				<dt>Compound (compared to parent)</dt><dd>0.66</dd>
+			</dl>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Obtained weights</h3>
+		</div>
+		<div class="panel-body">
+			<p>Stop words with a weight of 0 and punctuation marks were removed from the list below.</p>
+			<p>Classes above the threshold (1.0) are highlighted in <span class="bg-success">green</span>.</p>
+		</div>
+			<table class="table">
+				<thead>
+					<tr><th>Case</th><th>Weight</th></tr>
+				</thead>
+				<tbody>
+				<tr class="success">
+				<td>User</td><td>45.0</td>
+				</tr>
+				<tr class="success">
+				<td>Turbulence</td><td>8.1</td>
+				</tr>
+				<tr class="success">
+				<td>Flight</td><td>7.14</td>
+				</tr>
+				<tr class="success">
+				<td>What</td><td>5.8</td>
+				</tr>
+				<tr class="success">
+				<td>Record</td><td>5.0</td>
+				</tr>
+				<tr class="success">
+				<td>Airline</td><td>4.1</td>
+				</tr>
+				<tr class="success">
+				<td>Plane</td><td>3.8</td>
+				</tr>
+				<tr class="success">
+				<td>Location</td><td>3.8</td>
+				</tr>
+				<tr class="success">
+				<td>Sound</td><td>3.4</td>
+				</tr>
+				<tr class="success">
+				<td>Information</td><td>3.4</td>
+				</tr>
+				<tr class="success">
+				<td>Weather</td><td>3.32</td>
+				</tr>
+				<tr class="success">
+				<td>Data</td><td>2.4</td>
+				</tr>
+				<tr class="success">
+				<td>Journey</td><td>2.1</td>
+				</tr>
+				<tr class="success">
+				<td>Condition</td><td>2.0</td>
+				</tr>
+				<tr class="success">
+				<td>Pressure</td><td>2.0</td>
+				</tr>
+				<tr class="success">
+				<td>Number</td><td>2.0</td>
+				</tr>
+				<tr class="success">
+				<td>World</td><td>2.0</td>
+				</tr>
+				<tr class="success">
+				<td>Amount</td><td>2.0</td>
+				</tr>
+				<tr class="success">
+				<td>Air</td><td>2.0</td>
+				</tr>
+				<tr class="success">
+				<td>Route</td><td>1.7</td>
+				</tr>
+				<tr class="success">
+				<td>Direction</td><td>1.7</td>
+				</tr>
+				<tr class="success">
+				<td>Land</td><td>1.4</td>
+				</tr>
+				<tr class="success">
+				<td>Moment</td><td>1.4</td>
+				</tr>
+				<tr class="success">
+				<td>Ear</td><td>1.4</td>
+				</tr>
+				<tr class="success">
+				<td>Pilot</td><td>1.4</td>
+				</tr>
+				<tr class="success">
+				<td>Graph</td><td>1.0</td>
+				</tr>
+				<tr class="success">
+				<td>Temperature</td><td>1.0</td>
+				</tr>
+				<tr class="success">
+				<td>Library</td><td>1.0</td>
+				</tr>
+				<tr class="success">
+				<td>Explanation</td><td>1.0</td>
+				</tr>
+				<tr class="success">
+				<td>Expectation</td><td>1.0</td>
+				</tr>
+				<tr class="success">
+				<td>Time</td><td>1.0</td>
+				</tr>
+				<tr class="success">
+				<td>Gate</td><td>1.0</td>
+				</tr>
+				<tr class="success">
+				<td>Name</td><td>1.0</td>
+				</tr>
+				<tr class="success">
+				<td>Cause</td><td>1.0</td>
+				</tr>
+				<tr>
+				<td>Altitude</td><td>0.7</td>
+				</tr>
+				<tr>
+				<td>Bump</td><td>0.7</td>
+				</tr>
+				<tr>
+				<td>Hour</td><td>0.7</td>
+				</tr>
+				<tr>
+				<td>Noise</td><td>0.7</td>
+				</tr>
+				<tr>
+				<td>Landing</td><td>0.7</td>
+				</tr>
+				<tr>
+				<td>One</td><td>0.7</td>
+				</tr>
+				<tr>
+				<td>Term</td><td>0.7</td>
+				</tr>
+				<tr>
+				<td>Customers/passenger</td><td>0.7</td>
+				</tr>
+				<tr>
+				<td>Airport</td><td>0.7</td>
+				</tr>
+				<tr>
+				<td>Min</td><td>0.7</td>
+				</tr>
+				<tr>
+				<td>Arrival</td><td>0.7</td>
+				</tr>
+				<tr>
+				<td>Departure</td><td>0.66</td>
+				</tr>
+				<tr>
+				<td>Other</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Previous</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>About</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Actual</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Same</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Prior</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Potential</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>2</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Related</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Any</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Search</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>See</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>With</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Why</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Where</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>When</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>)</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>,</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>We</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>.</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Up</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Turn</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>/</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Try</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Through</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>The</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Terminal</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Of</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Sure</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Strange</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>10</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>On</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Longer</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Occur</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Current</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Fly</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Fix</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Elapsed</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>ETA.</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>During</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Drop</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Do</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Crowdsourced</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Obtain</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>And</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Can</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>By</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Both</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Before</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Base</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>At</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>For</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>From</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>General</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Get</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>My</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Much</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>May</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Look</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Long</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Likely</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Last</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Know</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>(</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>It</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Alert</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>In</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>How</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Hear</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>Happen</td><td>0.0</td>
+				</tr>
+				<tr>
+				<td>'</td><td>0.0</td>
+				</tr>
+				</tbody>
+			</table>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Generated classes</h3>
+		</div>
+			<table class="table" id="classes">
+				<thead>
+					<tr><th>Type</th><th>Class</th><th>Parent</th><th>Occurs in</th></tr>
+				</thead>
+				<tbody>
+					<tr>
+					<td>FunctionalRole</td><td>User</td><td></td><td>1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 44, 45, 46, 47, 48, 49</td>
+					</tr>
+					<tr>
+					<td></td><td>Information</td><td></td><td>1, 2, 33, 37</td>
+					</tr>
+					<tr>
+					<td></td><td>What</td><td></td><td>1, 2, 33, 36, 37</td>
+					</tr>
+					<tr>
+					<td></td><td>System</td><td></td><td>3, 39, 45</td>
+					</tr>
+					<tr>
+					<td></td><td>Weather Condition</td><td>Condition</td><td>4, 17</td>
+					</tr>
+					<tr>
+					<td></td><td>Condition</td><td></td><td>4, 17</td>
+					</tr>
+					<tr>
+					<td></td><td>Weather</td><td></td><td>4, 17, 27, 29</td>
+					</tr>
+					<tr>
+					<td></td><td>Expectation</td><td></td><td>6</td>
+					</tr>
+					<tr>
+					<td></td><td>Turbulence Record</td><td>Record</td><td>7, 8, 30, 31</td>
+					</tr>
+					<tr>
+					<td></td><td>Record</td><td></td><td>7, 8, 16, 30, 31</td>
+					</tr>
+					<tr>
+					<td></td><td>Turbulence</td><td></td><td>7, 8, 13, 14, 15, 30, 31, 38, 41, 42, 44</td>
+					</tr>
+					<tr>
+					<td></td><td>Pressure</td><td></td><td>9, 49</td>
+					</tr>
+					<tr>
+					<td></td><td>Air</td><td></td><td>10, 11</td>
+					</tr>
+					<tr>
+					<td></td><td>World</td><td></td><td>12, 48</td>
+					</tr>
+					<tr>
+					<td></td><td>Amount</td><td></td><td>14, 41</td>
+					</tr>
+					<tr>
+					<td></td><td>Turbulence Data</td><td>Data</td><td>15</td>
+					</tr>
+					<tr>
+					<td></td><td>Data</td><td></td><td>13, 15, 42</td>
+					</tr>
+					<tr>
+					<td>FunctionalRole</td><td>Airline</td><td></td><td>15, 16, 18, 23</td>
+					</tr>
+					<tr>
+					<td></td><td>Flight Record</td><td>Record</td><td>16</td>
+					</tr>
+					<tr>
+					<td></td><td>Flight</td><td></td><td>4, 7, 8, 16, 17, 18, 19, 23, 25, 30, 31</td>
+					</tr>
+					<tr>
+					<td></td><td>Flight Number</td><td>Number</td><td>18, 25</td>
+					</tr>
+					<tr>
+					<td></td><td>Number</td><td></td><td>18, 25</td>
+					</tr>
+					<tr>
+					<td></td><td>Flight Name</td><td>Name</td><td>19</td>
+					</tr>
+					<tr>
+					<td></td><td>Name</td><td></td><td>19</td>
+					</tr>
+					<tr>
+					<td></td><td>Temperature</td><td></td><td>21</td>
+					</tr>
+					<tr>
+					<td></td><td>Gate</td><td></td><td>24</td>
+					</tr>
+					<tr>
+					<td></td><td>Route</td><td></td><td>16, 26</td>
+					</tr>
+					<tr>
+					<td></td><td>Plane</td><td></td><td>2, 3, 28, 37, 45, 46, 47</td>
+					</tr>
+					<tr>
+					<td></td><td>Time</td><td></td><td>32</td>
+					</tr>
+					<tr>
+					<td></td><td>Library</td><td></td><td>34</td>
+					</tr>
+					<tr>
+					<td></td><td>Sound</td><td></td><td>34, 35, 36, 40</td>
+					</tr>
+					<tr>
+					<td></td><td>Cause</td><td></td><td>36, 38</td>
+					</tr>
+					<tr>
+					<td></td><td>Graph</td><td></td><td>44</td>
+					</tr>
+					<tr>
+					<td></td><td>Direction</td><td></td><td>46, 47</td>
+					</tr>
+					<tr>
+					<td></td><td>Explanation</td><td></td><td>47</td>
+					</tr>
+					<tr>
+					<td></td><td>Pilot</td><td></td><td>2, 7, 30, 37</td>
+					</tr>
+					<tr>
+					<td></td><td>Journey</td><td></td><td>4, 17, 46</td>
+					</tr>
+					<tr>
+					<td></td><td>Land</td><td></td><td>6, 39</td>
+					</tr>
+					<tr>
+					<td></td><td>Ear</td><td></td><td>9, 49</td>
+					</tr>
+					<tr>
+					<td></td><td>Moment</td><td></td><td>12, 48</td>
+					</tr>
+					<tr>
+					<td></td><td>Location</td><td></td><td>20, 21, 27, 28</td>
+					</tr>
+				</tbody>
+			</table>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Generated relationships</h3>
+		</div>
+			<table class="table" id="relationships">
+				<thead>
+					<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Occurs in</th></tr>
+				</thead>
+				<tbody>
+					<tr>
+					<td>User</td><td>Look</td><td>Information</td><td>1, 33</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Know</td><td>What</td><td>2, 37</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Know</td><td>System</td><td>3, 39, 45</td>
+					</tr>
+					<tr>
+					<td>Weather Condition</td><td>isa</td><td>Condition</td><td>4, 17</td>
+					</tr>
+					<tr>
+					<td>Weather</td><td>Condition</td><td>Weather Condition</td><td>4, 17</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Know</td><td>Weather Condition</td><td>4, 17</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Know</td><td>Expectation</td><td>6</td>
+					</tr>
+					<tr>
+					<td>Turbulence Record</td><td>isa</td><td>Record</td><td>7, 8, 30, 31</td>
+					</tr>
+					<tr>
+					<td>Turbulence</td><td>Record</td><td>Turbulence Record</td><td>7, 8, 30, 31</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Look At During</td><td>Turbulence Record</td><td>7, 8, 30, 31</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Know</td><td>Pressure</td><td>9, 49</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Know</td><td>Air</td><td>10, 11</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Know</td><td>World</td><td>12, 48</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Alert</td><td>Turbulence</td><td>13</td>
+					</tr>
+					<tr>
+					<td>User</td><td>See</td><td>Amount</td><td>14</td>
+					</tr>
+					<tr>
+					<td>Turbulence Data</td><td>isa</td><td>Data</td><td>15</td>
+					</tr>
+					<tr>
+					<td>Turbulence</td><td>Data</td><td>Turbulence Data</td><td>15</td>
+					</tr>
+					<tr>
+					<td>Airline</td><td>Gather</td><td>Turbulence Data</td><td>15</td>
+					</tr>
+					<tr>
+					<td>Flight Record</td><td>isa</td><td>Record</td><td>16</td>
+					</tr>
+					<tr>
+					<td>Flight</td><td>Record</td><td>Flight Record</td><td>16</td>
+					</tr>
+					<tr>
+					<td>Airline</td><td>Compare</td><td>Flight Record</td><td>16</td>
+					</tr>
+					<tr>
+					<td>Flight Number</td><td>isa</td><td>Number</td><td>18, 25</td>
+					</tr>
+					<tr>
+					<td>Flight</td><td>Number</td><td>Flight Number</td><td>18, 25</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Search By</td><td>Flight Number</td><td>18</td>
+					</tr>
+					<tr>
+					<td>Flight Name</td><td>isa</td><td>Name</td><td>19</td>
+					</tr>
+					<tr>
+					<td>Flight</td><td>Name</td><td>Flight Name</td><td>19</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Look</td><td>Flight Name</td><td>19</td>
+					</tr>
+					<tr>
+					<td>User</td><td>See</td><td>Temperature</td><td>21</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Find</td><td>Flight</td><td>23</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Know</td><td>Gate</td><td>24</td>
+					</tr>
+					<tr>
+					<td>User</td><td>See</td><td>Flight Number</td><td>25</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Search By</td><td>Route</td><td>26</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Know</td><td>Weather</td><td>27, 29</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Know</td><td>Plane</td><td>28</td>
+					</tr>
+					<tr>
+					<td>User</td><td>See</td><td>Time</td><td>32</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Look Through</td><td>Library</td><td>34</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Preview</td><td>Sound</td><td>35</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Read</td><td>What</td><td>36</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Know</td><td>Cause</td><td>38</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Know About</td><td>Sound</td><td>40</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Measure</td><td>Amount</td><td>41</td>
+					</tr>
+					<tr>
+					<td>User</td><td>Alert To</td><td>Turbulence</td><td>42</td>
+					</tr>
+					<tr>
+					<td>User</td><td>See</td><td>Graph</td><td>44</td>
+					</tr>
+					<tr>
+					<td>User</td><td>See</td><td>Direction</td><td>46</td>
+					</tr>
+					<tr>
+					<td>User</td><td>See</td><td>Explanation</td><td>47</td>
+					</tr>
+				</tbody>
+			</table>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+			The output can be found at <a href="C:\Users\c\Desktop\VisualNarrator-master-newoutput/System/ontology/System9.omn">output/System/ontology/System9.omn</a>, which can be used to analyze and visualize the ontology.
+		</div>
+		<div class="panel-footer">
+				<span class="text-muted">
+					# 
+					Generated 
+					with 
+					Visual 
+					Narrator 
+				</span>
+				<br>
+					Prefix: 
+					: 
+					<http://fakesite.org/system.owl#> 
+				<br>
+					Prefix: 
+					owl: 
+					<http://www.w3.org/2002/07/owl#> 
+				<br>
+					Prefix: 
+					rdf: 
+					<http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+				<br>
+					Prefix: 
+					rdfs: 
+					<http://www.w3.org/2000/01/rdf-schema#> 
+				<br>
+					Prefix: 
+					xsd: 
+					<http://www.w3.org/2001/XMLSchema#> 
+				<br>
+					Prefix: 
+					dc: 
+					<http://purl.org/dc/elements/1.1/> 
+				<br>
+					Prefix: 
+					onto: 
+					<http://fakesite.org/system.owl#> 
+				<br>
+					 
+				<br>
+					Ontology: 
+					<:> 
+				<br>
+					 
+				<br>
+					Annotations: 
+				<br>
+					&nbsp;
+						dc:title 
+					"System", 
+				<br>
+					&nbsp;
+						dc:creator 
+					"Visual 
+					Narrator", 
+				<br>
+					&nbsp;
+						rdfs:comment 
+					"Generated 
+					with 
+					Visual 
+					Narrator" 
+				<br>
+					 
+				<br>
+					AnnotationProperty: 
+					dc:creator 
+				<br>
+					 
+				<br>
+					AnnotationProperty: 
+					dc:title 
+				<br>
+					 
+				<br>
+					 
+				<br>
+				<span class="text-muted">
+					# 
+					Relationships 
+				</span>
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canRead 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:What 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canKnow1 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:What 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canKnow2 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:System 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canKnow3 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:WeatherCondition 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canKnow4 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Expectation 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canKnow5 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Pressure 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canKnow6 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Air 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canKnow7 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:World 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canKnow8 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Gate 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canKnow9 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Weather 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canKnow10 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Plane 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canKnow11 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Cause 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canLook1 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Information 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canLook2 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:FlightName 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:hasRecord1 
+				<br>
+					&nbsp;
+						Domain: 
+					:Turbulence 
+				<br>
+					&nbsp;
+						Range: 
+					:TurbulenceRecord 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:hasRecord2 
+				<br>
+					&nbsp;
+						Domain: 
+					:Flight 
+				<br>
+					&nbsp;
+						Range: 
+					:FlightRecord 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canSearchBy1 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:FlightNumber 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canSearchBy2 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Route 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:hasCondition 
+				<br>
+					&nbsp;
+						Domain: 
+					:Weather 
+				<br>
+					&nbsp;
+						Range: 
+					:WeatherCondition 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canLookAtDuring 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:TurbulenceRecord 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canPreview 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Sound 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canAlert 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Turbulence 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canSee1 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Amount 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canSee2 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Temperature 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canSee3 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:FlightNumber 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canSee4 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Time 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canSee5 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Graph 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canSee6 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Direction 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canSee7 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Explanation 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canGather 
+				<br>
+					&nbsp;
+						Domain: 
+					:Airline 
+				<br>
+					&nbsp;
+						Range: 
+					:TurbulenceData 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:hasData 
+				<br>
+					&nbsp;
+						Domain: 
+					:Turbulence 
+				<br>
+					&nbsp;
+						Range: 
+					:TurbulenceData 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canCompare 
+				<br>
+					&nbsp;
+						Domain: 
+					:Airline 
+				<br>
+					&nbsp;
+						Range: 
+					:FlightRecord 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:hasName 
+				<br>
+					&nbsp;
+						Domain: 
+					:Flight 
+				<br>
+					&nbsp;
+						Range: 
+					:FlightName 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:hasNumber 
+				<br>
+					&nbsp;
+						Domain: 
+					:Flight 
+				<br>
+					&nbsp;
+						Range: 
+					:FlightNumber 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canFind 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Flight 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canMeasure 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Amount 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canKnowAbout 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Sound 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canAlertTo 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Turbulence 
+				<br>
+					 
+				<br>
+					<span class="text-primary">ObjectProperty: </span>
+					:canLookThrough 
+				<br>
+					&nbsp;
+						Domain: 
+					:User 
+				<br>
+					&nbsp;
+						Range: 
+					:Library 
+				<br>
+					 
+				<br>
+				<span class="text-muted">
+					# 
+					Classes 
+				</span>
+				<br>
+					<span class="text-success">Class: </span>
+					:User 
+				<br>
+					&nbsp;
+						Annotations: 
+				<br>
+					&nbsp;
+							rdfs:comment 
+					"Functional 
+					Role" 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Information 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:What 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:System 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:WeatherCondition 
+				<br>
+					&nbsp;
+						SubClassOf: 
+					:Condition 
+				<br>
+					&nbsp;
+						Annotations: 
+				<br>
+					&nbsp;
+							rdfs:label 
+					"Weather 
+					Condition" 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Condition 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Weather 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Expectation 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:TurbulenceRecord 
+				<br>
+					&nbsp;
+						SubClassOf: 
+					:Record 
+				<br>
+					&nbsp;
+						Annotations: 
+				<br>
+					&nbsp;
+							rdfs:label 
+					"Turbulence 
+					Record" 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Record 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Turbulence 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Pressure 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Air 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:World 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Amount 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:TurbulenceData 
+				<br>
+					&nbsp;
+						SubClassOf: 
+					:Data 
+				<br>
+					&nbsp;
+						Annotations: 
+				<br>
+					&nbsp;
+							rdfs:label 
+					"Turbulence 
+					Data" 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Data 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Airline 
+				<br>
+					&nbsp;
+						Annotations: 
+				<br>
+					&nbsp;
+							rdfs:comment 
+					"Functional 
+					Role" 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:FlightRecord 
+				<br>
+					&nbsp;
+						SubClassOf: 
+					:Record 
+				<br>
+					&nbsp;
+						Annotations: 
+				<br>
+					&nbsp;
+							rdfs:label 
+					"Flight 
+					Record" 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Flight 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:FlightNumber 
+				<br>
+					&nbsp;
+						SubClassOf: 
+					:Number 
+				<br>
+					&nbsp;
+						Annotations: 
+				<br>
+					&nbsp;
+							rdfs:label 
+					"Flight 
+					Number" 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Number 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:FlightName 
+				<br>
+					&nbsp;
+						SubClassOf: 
+					:Name 
+				<br>
+					&nbsp;
+						Annotations: 
+				<br>
+					&nbsp;
+							rdfs:label 
+					"Flight 
+					Name" 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Name 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Temperature 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Gate 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Route 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Plane 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Time 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Library 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Sound 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Cause 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Graph 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Direction 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Explanation 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Pilot 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Journey 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Land 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Ear 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Moment 
+				<br>
+					 
+				<br>
+					 
+				<br>
+					<span class="text-success">Class: </span>
+					:Location 
+				<br>
+					 
+				<br>
+					 
+				<br>
+		</div>
+	</div>		
+</div>
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted">Generated with Visual Narrator</p>
+		</div>
+	</footer>
+</body>
+</html>
