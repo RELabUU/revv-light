@@ -1,4 +1,4 @@
-# REVV (Requirement Engineer Validation & Verification) tool
+# REVV-Light tool
 
 > Visualizes & Allows to Interact with User Stories
 
