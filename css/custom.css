@@ -1,0 +1,120 @@
+/*CSS document for Visual Narrator*/
+
+/* body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+} */
+
+
+header {
+    background-color:rgb(51, 47, 48);
+    height: 40px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    overflow: visible;
+    z-index: 1;
+}
+
+nav#nav-down {
+  width:250px;
+  margin: auto;
+
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+}
+
+#nav-down > ul {
+  margin-bottom: 0px;
+}
+#nav-down li {
+  float:left;
+  list-style: none;
+  /*line-height: 40px;*/
+  height: 40px;
+  /*padding-top: 5px;*/
+
+}
+
+#nav-down li a {
+  color: rgb(133, 134, 133);
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  padding:10px 10px 5px 10px;
+  text-align: center;
+  height: inherit;
+  border-left: 1px solid rgb(66, 66, 66);
+  border-right: 1px solid rgb(66, 66, 66);
+}
+#nav-down li a:hover {
+color: #fff;
+/*background: rgba(255,255,255,0.2);*/
+/*background: rgb(134, 47, 201);*/
+background: rgb(236, 195, 72);
+}
+
+#topbar-button {
+  width:75px;
+  height:25px;
+  background-color: inherit;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top:40px;
+  z-index: 1;
+  border-bottom-right-radius:5px;
+border-bottom-left-radius:5px;
+  text-align: center;
+}
+
+#topbar-button > a {
+  color:rgb(236, 195, 72);
+  padding:5px 5px 5px 10px;
+  display: inline-block;
+  position:absolute;
+  left:0px;
+  top:-4px;
+  font-weight: 600;
+}
+
+.topbar-icon{
+  /*float:left;*/
+  padding-left: 4px;
+  /*clear:left;*/
+}
+.nav-up {
+    top: -40px;
+}
+
+#vis-wrapper {
+	/*padding-top:40px;*/
+}
+
+#visualization {
+    height:930px;
+    max-height: 950px;
+    border: 1px solid grey;
+/*     border-left: 5px solid rgb(236, 195, 72); */
+    border: 1px solid transparent;
+    border-radius:5px;
+    box-shadow: 3px 3px 10px 2px;
+    box-shadow: 0 0 10px #333;
+	  background-color:#ffffff;
+
+    }
+
+body {
+	background-color:rgb(210, 210, 210);
+}
+
+#vis-wrapper {
+	margin: 8px 10px 10px 10px;
+	/* border:1px solid ;
+	border-radius:25px; */
+}
