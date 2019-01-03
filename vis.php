@@ -26,7 +26,7 @@
     <link href="css/rangeslider.css" rel="stylesheet">
 	
 	<!-- We get the JS objects -->
-	<script type="text/javascript" src="input/<?php echo $_GET["file"]; ?>.js"></script>
+	<script type="text/javascript" src="input/<?php echo htmlspecialchars($_GET["file"], ENT_QUOTES, 'UTF-8'); ?>.js"></script>
 	
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script type="text/javascript" src="js/custom-functionalities.js"></script>
@@ -95,7 +95,7 @@ var currentView = 0;
 			
 			<div style="margin-left:4px; z-index:1000 position:absolute;">
 				<span class="fa fa-question-circle helpIcon" id="helpIcon2" style="position:absolute; margin-top:78px; color:#FFFFFF; z-index:9999999999999!important;" onclick="displayHelpWindow(2)"></span>
-				<span class="fa fa-question-circle helpIcon" id="helpIcon3" style="position:absolute; margin-top:119px; color:#FFFFFF; z-index:9999999999999!important;" onclick="displayHelpWindow(3)"></span>
+				<!-- <span class="fa fa-question-circle helpIcon" id="helpIcon3" style="position:absolute; margin-top:119px; color:#FFFFFF; z-index:9999999999999!important;" onclick="displayHelpWindow(3)"></span> -->
 			</div>
 			
 			<li class="sidebar-brand">
@@ -158,6 +158,10 @@ var currentView = 0;
 						</ul>			
 					</div>
 				</span>
+			</li>
+			
+			<li>
+				<a id="user_stories" onclick="showAllStories()" href="#">User Stories</a>
 			</li>
 				
 			<script>
